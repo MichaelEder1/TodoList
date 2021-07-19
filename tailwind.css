@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    @apply text-sm font-thin leading-5 tracking-wide mt-5 ml-0 mb-7;
+}
+
+span {
+    @apply text-xs;
+}
+
+input, textarea {
+    @apply bg-gray-200 border-none py-1 px-0 w-full;
+}
+
+
+:root {
+    font-size: 1.25em;
+}
+
+.button{
+    @apply rounded border tracking-wider uppercase animate-buttonAnimation mr-3 py-2 px-4 border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 justify-end;
+}
+
+.inputField{
+    @apply text-2xl appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10;
+}
+
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h3{
+    @apply text-2xl font-bold text-indigo-700 mb-8;
+}
+
+h4{
+    @apply text-xl font-bold text-indigo-700 mb-4 mt-8;
+}
